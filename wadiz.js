@@ -13,23 +13,10 @@ var dr = "http://lt2.kr/pu/api/direct.php";
 function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName, threadId){ 
  try{
    
-if(msg=="/인자값찾기"){
+/*if(msg=="/인자값찾기"){
 let inja = Jsoup.connect(Mlink).get()
 replier.reply(inja);
-}
-
-if(msg=="/직영"){
-let drm = Jsoup.connect(dr).ignoreContentType(true).get().text()
-//let Tparsing = Jsoup.connect(Tparse).ignoreContentType(true).get().wholeText().split('\n').map(e=>e.trim()).filter(e=>e).join('\n')
-  
-var da = drm.select("data").text();
-var ti = drm.select("timestamp").text();
-
-replier.reply(drm);
-replier.reply(da+ti);
-
-
-}
+}*/
 
    
 if(msg=="/와디즈전체") { 
@@ -44,7 +31,7 @@ var like = map.select("div[class=btn-wrap-flex]").text().replace(/문의 공유�
  replier.reply(N+achiv+" 달성"+N+N+tamount+" 펀딩"+N+N+tsup+"명의 서포터"+N+N+like+"개의 좋아요");
 }
    
-if(msg=="/와디즈") { 
+/*if(msg=="/와디즈") { 
 let map = Jsoup.connect(Mlink).get()
 //var bx = map.select("h3 class").select("img").attr("src");
 //var remday = map.select("p[class=remaining-day]").text();
@@ -78,10 +65,9 @@ var tamount = map.select("p[class=total-amount]").text().replace(/펀딩.*?펀�
 var tsup = map.select("p[class=total-supporter]").text().replace(/명의 서포터.*?명의 서포터/g, '');
 var like = map.select("div[class=btn-wrap-flex]").text().replace(/문의 공유하기.*?문의 공유하기/g, '');
 
-
  replier.reply("테스트입니다.컴퍼비즈프로🎧 현황"+N+"달성률: "+achiv+N+"달성 금액: "+tamount+N+"서포터 수: "+tsup+N+"좋아요❤: " +like+N + ment2);
 }
-
+*/
 
 
 }catch(e){
