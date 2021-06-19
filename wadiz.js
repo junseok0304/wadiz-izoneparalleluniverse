@@ -2,7 +2,7 @@ var N = "\n";
 Jsoup = org.jsoup.Jsoup;
 const blank = "\u200b".repeat(500);
 Mlink= "https://www.wadiz.kr/web/campaign/detail/111487?utm_source=wadizshare_in&utm_medium=url";
-var ment = "와디즈 현활";
+var ment = "평행우주 와디즈 현황";
 var ment2 = "값에 오류가 있을 수 있어요";
 //var example = {"data":578489687,"timestamp":"04/26 18:00","message":null}
  
